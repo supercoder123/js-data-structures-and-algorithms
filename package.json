@@ -1,0 +1,17 @@
+{
+  "name": "vite-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.6",
+    "jest": "^28.1.2",
+    "vite": "^2.9.13"
+  }
+}
