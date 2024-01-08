@@ -27,4 +27,8 @@ export class Queue {
   toString() {
     return this.queue.toString();
   }
+
+  size() {
+    return this.queue.length;
+  }
 }

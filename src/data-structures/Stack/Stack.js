@@ -28,6 +28,10 @@ export class Stack {
     return this.items.toArray();
   }
 
+  size() {
+    return this.items.length;
+  }
+
   toString() {
     return this.items.toString();
   }

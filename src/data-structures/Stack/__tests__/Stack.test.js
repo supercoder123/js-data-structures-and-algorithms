@@ -16,6 +16,20 @@ describe('Stack', () => {
     expect(stack.toString()).toBe('2 1');
   });
 
+  it('should have proper size() value', () => {
+    const stack = new Stack();
+
+    stack.push(1);
+    stack.push(2);
+    expect(stack.size()).toBe(2);
+
+    stack.push(4);
+    expect(stack.size()).toBe(3);
+
+    stack.pop();
+    expect(stack.size()).toBe(2);
+  });
+
   it('should peek data from stack', () => {
     const stack = new Stack();
 

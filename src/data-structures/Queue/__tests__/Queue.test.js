@@ -12,6 +12,7 @@ describe('Queue', () => {
 
     queue.enqueue(1);
     queue.enqueue(2);
+    expect(queue.size()).toBe(2);
 
     expect(queue.toString()).toBe('1 2');
   });
@@ -23,6 +24,7 @@ describe('Queue', () => {
 
     queue.enqueue(1);
     queue.enqueue(2);
+    expect(queue.size()).toBe(2);
 
     expect(queue.peek()).toBe(1);
     expect(queue.peek()).toBe(1);
@@ -46,6 +48,8 @@ describe('Queue', () => {
 
     expect(queue.dequeue()).toBe(1);
     expect(queue.dequeue()).toBe(2);
+    expect(queue.size()).toBe(0);
+
     expect(queue.dequeue()).toBeNull();
     expect(queue.isEmpty()).toBe(true);
   });
