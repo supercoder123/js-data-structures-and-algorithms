@@ -1,3 +1,4 @@
+// queue
 export class QueueClassic {
   constructor() {
     this.queue = {};
